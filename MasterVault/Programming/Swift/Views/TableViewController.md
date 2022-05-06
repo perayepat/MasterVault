@@ -1,0 +1,1 @@
+Video showing setup of a basic table view with Rows & Collums: https://www.youtube.com/watch?v=I0Qeq7wBmNM 
