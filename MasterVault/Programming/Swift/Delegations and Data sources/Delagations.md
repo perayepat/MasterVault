@@ -1,6 +1,12 @@
 How does swift handle a cluster of controllers?
 
 # Delegations view controller in code
+**LInks :**
+[`Video Example`](https://youtu.be/aAmvQU9HccA)
+[`Documentation`](https://medium.com/@astitv96/passing-data-between-view-controllers-using-delegate-and-protocol-ios-swift-4-beginners-e32828862d3f)
+[`Video Example(Different Angle)`](https://www.youtube.com/watch?v=Dh7fa1fdzBo)
+
+
 This code lets us access the other view controller which is n charge of creating another view where we can select our colors 
 This allows you to move from one class to another using the modal presentation 
 ![[Pasted image 20220327170604.png]] 
