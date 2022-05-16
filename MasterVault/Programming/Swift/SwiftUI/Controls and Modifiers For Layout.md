@@ -1,13 +1,13 @@
-Modfiiers stack so the last on effects the modifiers above it 
+Modifiers stack so the last on effects the modifiers above it 
 # Space modifiers 
-LInks :
+Links :
 [`Spacing Views`](https://betterprogramming.pub/how-to-evenly-space-views-in-swiftui-260965280368)
 [`Apple Doc`](https://developer.apple.com/documentation/swiftui/spacer)
 
 Using Spacers , stack spacing  and alignment 
 
 **Spacer**
-Spacers are mainly used for layout purposes to seperate elemetns 
+Spacers are mainly used for layout purposes to separate elements 
 ```                                                               SwiftUI
 VStack {  
 Image(systemName: "shield.fill")  
@@ -61,7 +61,7 @@ This code gives you this:
 **Frame Modifier**
 
 When tight on space and you need to fit your text into a tight spots for a specific look 
-the fram modifier can be used :
+the frame modifier can be used :
 
 ``` Swift
 	Text("To be, or not to be, that is the question:") 
