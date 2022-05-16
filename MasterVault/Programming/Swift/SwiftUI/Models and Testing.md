@@ -89,6 +89,6 @@ This is the PageTitleView Class and from here this bool to change the icon will 
 *Fig 2 Content View*
 
 
-# Dynamic Collections 
+
 
 
