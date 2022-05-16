@@ -1,4 +1,5 @@
-# Forms 
+# Overview
+## Forms 
 Scrolling lists of static views such as images and text fields but they can also have more dynamic things like toggle views and switches.
 
 ``` Swift
@@ -51,7 +52,7 @@ Groups look the same as a normal form and items aren't split up
 Sections however will split the view up like the setting view in your iPhone 
 
 
-# Navigation View
+## Navigation View
 Used to navigate between views 
 
 ``` Swift
@@ -65,7 +66,7 @@ NavigationView{
 }
 ```
 
-# Modifying program state
+## Modifying program state
 The active collection of changes and settings in programming is the state.
 These describe how the UI looks at the current state
 
@@ -89,7 +90,7 @@ States allow you to update components in the view and SwiftUi will keep track of
 
 This is designed for simple use when update small items in the view
 
-# Binding states to UI controls 
+## Binding states to UI controls 
 When you want to have a value you can get and set it in SwiftUI.
 We use:
 ``` Swift 
@@ -117,7 +118,8 @@ the $ sign tells swift we want to write to `txtName`
 
 ![[Pasted image 20220516102607.png]]
 
-# Creating views in a loop
+
+## Creating views in a loop
 Foreach loops allow you to display and loop through a number of items and display them dynamically.
 
 E.g. showing an array of :
@@ -169,4 +171,18 @@ struct ExampleCode: View {
 
 ![[Pasted image 20220516142912.png]]
 
-# 
+# App 
+## Reading text from the user 
+**Handling Integers using a text field**
+![[Pasted image 20220516145837.png]]
+``` Swift 
+@State private var checkAmount = 0.0
+TextField("Amount",value: $checkAmount, format: .currency(code: Locale.current.currentCode ?? "EUR") )
+.KeyboardType(.decimalPad)
+```
+
+`Value` - allows you to set an int in the text field 
+`Format` - Adds a currency pair to the int
+
+`.currency(code: Locale.current.currencyCode ?? "EUR"))`
+- This looks at the users region settings and sets it to the users current regional currency 
