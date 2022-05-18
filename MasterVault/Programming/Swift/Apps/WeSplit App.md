@@ -172,6 +172,7 @@ struct ExampleCode: View {
 ![[Pasted image 20220516142912.png]]
 
 # App 
+
 ## Reading text from the user 
 **Handling Integers using a text field**
 ![[Pasted image 20220516145837.png]]
@@ -186,3 +187,42 @@ TextField("Amount",value: $checkAmount, format: .currency(code: Locale.current.c
 
 `.currency(code: Locale.current.currencyCode ?? "EUR"))`
 - This looks at the users region settings and sets it to the users current regional currency 
+`.  .keyboardType(.decimalPad)` - Switches the normal keyboard to a keypad 
+
+## Pickers in a form 
+Pickers need a two way binding like `@State` to store and retrieve the values
+
+`NavigationView` is needed when working with `Picker` as you need to go to a new view in order to make the selection to the picker. 
+![[Pasted image 20220516151353.png]]
+
+
+## Segmented Control
+When using picker `.pickerStyle(.segmented)` allows you to show the picker in a different style
+
+**Adding a header to the picker**
+Adding a `header : {Text("Header")}`
+allows you to add a header to the picker allowing the user to see what the picker can be used for 
+
+![[Pasted image 20220516154108.png]]
+
+## Calculating the total Per person
+Using computed variables makes the calculation easier than using a method.
+
+``` Swift
+var totalPerPerson : Double{
+//calculate the total per person
+
+let peopleCount = Double(numberOfPeople + 2)
+let tipSelection = Double(tipPercentage)
+
+let tipValue = checkAmount / 100 * tipSelection
+let grandTotal = checkAmount + tipValue
+let amountPerPerson = grandTotal / peopleCount
+
+return amountPerPerson
+}
+
+```
+
+
+## Hiding the keyBoard 
