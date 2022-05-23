@@ -8,3 +8,7 @@
 - Its only the design no functionallity included 
 - 3/5
 
+# Parking App design 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-wLCfqBJBO4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+# Glass Morphism & Angular Gradients
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NFg6oYmraXk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
