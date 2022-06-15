@@ -8,6 +8,7 @@
 # Read-Only singletons
 A class called app setting is created 
 
+
 Sharing data across the whole app is now thread-safe *(Meaning when multiple threads are accessing the singleton data no duplicates will be created)*
 
 ``` Swift 
@@ -120,4 +121,5 @@ After this change, the methods can be accessed in parallel, read happens in ordi
 
        }
 ```
+
 
