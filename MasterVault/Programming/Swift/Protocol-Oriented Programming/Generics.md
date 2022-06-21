@@ -224,3 +224,45 @@ StackProtocol.push("Hell")
 
 print(stringStack.pop() ?? "empty")
 ```
+# Model-View-ViewModel
+
+**Overview**
+
+![[Pasted image 20220621181031.png]]
+Separating the business logic and views using three components: 
+
+**View**
+Consists of all visual elements 
+Concerned with tasks that are related to the view such as layout, color and animation. 
+
+**View Model**
+Represents the state of the UI
+
+**Model**
+The application state that handles and manages the logic of that's sent to the view. 
+
+**Diagram**
+The direction is a one way road where its loosely coupled and the ViewModel doesn't know about the view and the model doesn't know about the ViewModel.
+
+Promotes stability and reusability  
+![[Pasted image 20220621181538.png]]
+
+The ViewModel propagates changes to the view using data bindings the view reacts to ViewModel changes, Using Swiftui and the Combine framework. 
+
+**High level overview**
+
+![[Pasted image 20220621182109.png]]
+**View**
+this allows the user to enter the name of the city and show the current weather in that city. 
+
+
+![[Pasted image 20220621181954.png]]
+**ViewModel**
+  Using the observable object so were able to use data bindings. 
+
+![[Pasted image 20220621182221.png]]
+**Model**
+This will provide weather information provided to us by the API. We encapsulate the initialization requests ,network requests and data conversions into dedicated controller types. 
+
+Using protocols to decode the json information. 
+![[Pasted image 20220621182453.png]]
