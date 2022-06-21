@@ -128,3 +128,7 @@ myPlane.Fly()
 
 museum.flyingDemo(flyingObject: myEagle)
 ```
+
+
+# Highlighting the differences
+![[Pasted image 20220621141436.png]]
