@@ -105,3 +105,37 @@ State preservation and restoration can all be done in the app delegate.
 this shows all the possible state and what triggers those transitions.
 
 ![[Pasted image 20220623152657.png]]
+# Building Responsive Apps
+## The main UI thread
+**Main thread Overview**
+ - The main thread is reserved for UI related tasks ,
+ -  task like file IO and asynchronous tasks shouldn't run on the main task because they make animations and other tasks slow 
+ ![[Pasted image 20220623155047.png]]
+
+**Best Practices**
+![[Pasted image 20220623162627.png]]
+
+**GCD**
+
+this allows tasks to be submitted to a queue which are then executed in a FIFO order 
+
+![[Pasted image 20220623162650.png]]
+
+**Dispatch Queue**
+
+*How it works :*
+
+Concurrent queue 
+	- the user tasks are executed asynchronously.  
+	- the control  returns to the caller.
+	- the concurrent queue can execute other tasks in parallel  with the currently submitted one.
+
+Serial queue 
+	- the concurrent queue and the task execute synchronously and one task is done at a time until the main one is completed. 
+	- the concurrent queue can execute other tasks too. 
+
+![[Pasted image 20220623162800.png]]
+
+
+**Serial Queue**
+![[Pasted image 20220623163335.png]]
