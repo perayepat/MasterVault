@@ -265,4 +265,4 @@ this allows the user to enter the name of the city and show the current weather 
 This will provide weather information provided to us by the API. We encapsulate the initialization requests ,network requests and data conversions into dedicated controller types. 
 
 Using protocols to decode the json information. 
-![[Pasted image 20220621182453.png]]
+![[Pasted image 20220621182453.png]]+
