@@ -139,3 +139,112 @@ Serial queue
 
 **Serial Queue**
 ![[Pasted image 20220623163335.png]]
+
+## Deadlocks
+Submitting a task synchronously causes tasks to become dead locked and this freezes the app.
+
+A task implementing on the same queue causes a dead lock
+
+**Cause and use cases**
+To prevent deadlock don't call a synchronous queue on the same
+queue `viewDidLoad`  
+![[Pasted image 20220623165442.png]]
+
+# The SOLID Principles
+## Overview
+![[Pasted image 20220623165925.png]]
+
+**SOLID**
+theses are 5 fundamental object orientated programming principles that help solve bad design problems. 
+
+Pillars of well written object oriented code 
+
+![[Pasted image 20220623170104.png]]
+
+## Single Responsibility Principle 
+![[Pasted image 20220623170209.png]]
+
+implementation 
+Separating functionality of a class makes it easier to understand and refactor code if need be. 
+
+Changes are isolated to smaller units. 
+
+![[Pasted image 20220623170302.png]]
+
+## Open/Close Principle
+**Overview**
+
+This means new features are added by adding new code and not by modifying the existing code.
+![[Pasted image 20220623170557.png]]
+
+Swift extensions are a great way of adding new features 
+
+![[Pasted image 20220623170643.png]]
+
+we can enhance types we don't own 
+![[Pasted image 20220623170701.png]]
+
+## Liskov Substitution Principle
+**Overview**
+![[Pasted image 20220623170754.png]]
+
+**implementation**
+![[Pasted image 20220623170823.png]]
+
+the different types of shapes derive from shape
+because all these shapes derive from shape they are able to be used in a array that uses their base class and then use that array to calculate their total area 
+![[Pasted image 20220623171022.png]]
+
+## Interface Segregation Principle 
+**Overview**
+
+This deals with an interface that exposes to many properties, this can effect our type and protocols.
+![[Pasted image 20220623171337.png]]
+
+**Implantation**
+
+using the image Protocol what if we don't need the base64 encoded 
+
+or 
+Retrieving the Jpg image data 
+
+![[Pasted image 20220623171449.png]]
+
+the solution is to expose the narrowest interface
+![[Pasted image 20220623171535.png]]
+
+we can split the protocol into separate protocols  
+![[Pasted image 20220623171633.png]]
+
+clients can choose which protocols they want to adopt : 
+
+*The Encodable Image* and the *Base64EncodeablePersistableImage*
+
+these use composition to call the protocols they need instead of calling the bulky first protocol.
+![[Pasted image 20220623171835.png]]
+- default behavior can be executed using extensions. 
+
+## Dependency Inversion Principle
+**Overview**
+![[Pasted image 20220623172024.png]]
+
+**Implementation**
+
+![[Pasted image 20220623172039.png]]
+- The persistence class can save objects of data to specific destination using a string
+- The persistence class uses the logger class to print out log messages 
+- Persistence is High level and logger is Low level 
+
+The goal becomes to decouple the Logger class and the Persistence class
+
+**solution to tight coupling**
+Introducing a swift protocol that uses holds the logging functionality.
+![[Pasted image 20220623172447.png]]
+
+`Persistance` now refers to a protocol instead of a concrete type
+
+we pass the logging object through the `init`
+this allows us to use persistence in any class ad use persistence with any other type of `Loggger`
+
+*Useful for testing*
+
