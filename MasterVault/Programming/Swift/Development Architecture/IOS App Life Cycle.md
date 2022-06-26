@@ -248,3 +248,50 @@ this allows us to use persistence in any class ad use persistence with any other
 
 *Useful for testing*
 
+# Communication between Apps
+## Overview
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZZNSakE329w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+![[Pasted image 20220623174626.png]]
+
+These sharing schemes won't work because of iOS security 
+![[Pasted image 20220623174706.png]]
+
+## Calling an app from another app
+using the the url scheme you are about to open your app from another app 
+
+![[Pasted image 20220623175444.png]]
+Linking this to a button will open your app from another app 
+
+**Pitfalls**
+
+you should always query if the app is installed or available before trying to open it using the URL. 
+
+![[Pasted image 20220623175712.png]]
+
+## URL Scheme whitelist 
+If we want to look up a specific URL scheme we need to add it to the white list.
+
+The white list can only contain certain number of URLs. 
+
+using the PList
+
+## Passing parameters between the apps
+
+while this works this is limited to the parameters passed in the query string. 
+**Sources**
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/UVIQ7fkw_N8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	
+we can pass parameters between apps using a query strings
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/Kr3G9C22_-Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+## Airdrop 
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/wpfsN5najB4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+# Efficiency and Performance
+When memory warning happens the best thing to do is to clear all caches 
+
+**Profiles**
+can be used to see how to optimize your app 
