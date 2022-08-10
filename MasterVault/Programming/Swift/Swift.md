@@ -44,10 +44,10 @@ this splits a string into an array where the string before and after are split i
 cannot just convert double to int
 int(double) 
 
-loss of precision when a float looses its decimals 
+loss of precision when a float loses its decimals 
 String(double) - converts int to a string literal 
 
-working with a double and a int one has to be made explicit to give the compiler enough information 
+working with a double and an int one has to be made explicit to give the compiler enough information 
 ![[Pasted image 20220308004602.png]]
 
 ## Booleans and Logical Operators
