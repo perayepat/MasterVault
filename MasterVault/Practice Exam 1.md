@@ -3,7 +3,7 @@
 	![[Pasted image 20220808163651.png]]
 
 
-**Q:** Which feature is available for stored properties, but not computed properties ? 
+**Q:** Which feature is available for stored properties, but not computed properties? 
 	**A: Type Inference**
 	> Computed properties must explicitly declare their type. Stored properties can let the compiler infer their type. 
 
@@ -31,7 +31,7 @@
 	![[Pasted image 20220808165755.png]]
 
 
-**Q:** what is the effect of the expression shape `["depth"]` int this snippet 
+**Q:** what is the effect of the expression shape `["depth"]` in this snippet 
 	**A: It will return nil**
 	> the shape dictionary doesn't have a depth key and will return nil.
 	
@@ -61,7 +61,7 @@
 **Q:** What is an important consideration regarding closures and memory management ?
 	**A: Closures can prevent deallocation of objects from their enclosing scope**
 
-**Q:** When writing a closure, what is the role of the `in` Keyword ? 
+**Q:** When writing a closure, what is the role of the Keyword? 
 	**A: it separates the closure's signature from its body**
 	> A closure can operate in many types of values not only collections 
 
@@ -72,18 +72,34 @@
 	**A: Equitable**
 
 
-**Q:** Why will this code fail to compile ? (if let)
+**Q:** Why will this code fail to compile? (if let)
 	**A: The else syntax in this snippet is for a guard let statement, not an if let statement**
 	![[Pasted image 20220810084237.png]]
 	
 
-**Q:** What should the badge value be set to if you want to clear a tab bar item's badge ?
+**Q:** What should the badge value be set to if you want to clear a tab bar item's badge?
 	**A: nil**
 
 **Q:** The view controller appearance callbacks each take an argument of type.
 	**A: - Bool 
 		- Animated**
 
-**Q:** which application delegate callback notifies your app of an interruption such as an incoming phone call ? 
+**Q:** Which application delegate callback notifies your app of an interruption such as an incoming phone call? 
 	**A: `applicationWillResignActive()`**
+
+**Q:** which UITableViewDelegate callback should you implement to decide which cells should have Delete buttons in editing mode?
+	**A: `tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: indexPath: indexPath) -> UITableViewCellEditingStyle`**
+
+
+**Q:** ![[Pasted image 20220810135640.png]]
+	**A: Implementing the protocol requirements is one way to make ExpenseReport conform to `Codeable` once codable both Expense and Expense Report need to be codable**
+
+**Q:** which data types are shareable with other apps using a `UIActivityViewController`? 
+	**A: Any**
+	> the activity view controller takes an array of activity items, of type Any
 	
+**Q:** Use this code snippet to answer the question 
+	![[Pasted image 20220810140457.png]]
+	which response should you see to complete the code snippet ?
+	**A: guard**
+	> Guard checks a condition and is always followed by and `else` clause.
