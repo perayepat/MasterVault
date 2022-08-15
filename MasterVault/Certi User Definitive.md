@@ -311,3 +311,19 @@ Q: In the screenshot below, we want to add a label that is centred horizontally 
 - Tap on the Align button 
 - Check the horizontally in the container and vertically in container 
 - Tap the add 2 constraints button 
+
+Q: Review this code (Return type with 0)
+```Swift 
+func divide(_ number: Int,by divisor:Int) -> Int?{
+	guard divisor != 0 else{
+	return nil 
+	}
+	return number / divisor 
+}
+
+let divisionResult = dividde(10, by: 0)
+
+```
+What type will divisionResult be?
+
+Int?
