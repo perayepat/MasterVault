@@ -267,7 +267,7 @@ Q: An enumeration type can have which of the following features? (Select all tha
 Q: Row your boat 
 Song(title: "Row, Row Your Boat", duration: 3) 
 ****
-Song(title: "Row,Row Your Boat", duration:3)
+
 
 
 Q: Drag and match the steps to embed the three UIButtons in a horizontal stack view in the first view to match the second view. (Oranges)
@@ -327,3 +327,31 @@ let divisionResult = dividde(10, by: 0)
 What type will divisionResult be?
 
 Int?
+
+Q: You have two scenes and a navigation controller. Drag the steps in the right order to create a segue from the button on the Welcome to QuestionBot scene to Question #1.
+<table>
+  <tr>
+    <th>Answers</th>
+    <th>Order</th>
+  </tr>
+  <tr>
+    <td>Control-Drag from the Button in the Welcome  to QuestionBot scene to Question #1</td>
+    <td>First</td>
+  </tr>
+  <tr>
+    <td>Select Show from the popover menu</td>
+    <td>Second</td>
+  </tr>
+  <tr>
+    <td>Select the show segue to "View Controller" item in the documentation</td>
+    <td>Third</td>
+  </tr>
+  <tr>
+    <td>Select the attributes inspector</td>
+    <td>Fourth</td>
+  </tr>
+   <tr>
+    <td>Enter "Start" into the identifier text</td>
+    <td>Fifth</td>
+  </tr>
+</table>
